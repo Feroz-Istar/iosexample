@@ -17,6 +17,11 @@
 		B94698631F7D49AB008985B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698611F7D49AB008985B9 /* LaunchScreen.storyboard */; };
 		B946986E1F7D49AC008985B9 /* IOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946986D1F7D49AC008985B9 /* IOSExampleTests.swift */; };
 		B94698791F7D49AC008985B9 /* IOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698781F7D49AC008985B9 /* IOSExampleUITests.swift */; };
+		B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698861F7D50B9008985B9 /* TimerStoryboard.storyboard */; };
+		B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698881F7D50D8008985B9 /* TimerControllerViewController.swift */; };
+		B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */; };
+		B946988E1F7D6150008985B9 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988D1F7D6150008985B9 /* Stories.swift */; };
+		B94698901F7D63AC008985B9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988F1F7D63AC008985B9 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		B94698741F7D49AC008985B9 /* IOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94698781F7D49AC008985B9 /* IOSExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSExampleUITests.swift; sourceTree = "<group>"; };
 		B946987A1F7D49AC008985B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B94698861F7D50B9008985B9 /* TimerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimerStoryboard.storyboard; sourceTree = "<group>"; };
+		B94698881F7D50D8008985B9 /* TimerControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControllerViewController.swift; sourceTree = "<group>"; };
+		B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabelCellTableViewCell.swift; sourceTree = "<group>"; };
+		B946988D1F7D6150008985B9 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		B946988F1F7D63AC008985B9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,10 +149,14 @@
 			children = (
 				B94698581F7D49AB008985B9 /* AppDelegate.swift */,
 				B946985A1F7D49AB008985B9 /* ViewController.swift */,
+				B946988F1F7D63AC008985B9 /* Person.swift */,
+				B946988D1F7D6150008985B9 /* Stories.swift */,
 				B946985C1F7D49AB008985B9 /* Main.storyboard */,
+				B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */,
 				B946985F1F7D49AB008985B9 /* Assets.xcassets */,
 				B94698611F7D49AB008985B9 /* LaunchScreen.storyboard */,
 				B94698641F7D49AB008985B9 /* Info.plist */,
+				B946988A1F7D50DD008985B9 /* timer */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -163,6 +177,15 @@
 				B946987A1F7D49AC008985B9 /* Info.plist */,
 			);
 			path = IOSExampleUITests;
+			sourceTree = "<group>";
+		};
+		B946988A1F7D50DD008985B9 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				B94698861F7D50B9008985B9 /* TimerStoryboard.storyboard */,
+				B94698881F7D50D8008985B9 /* TimerControllerViewController.swift */,
+			);
+			path = timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +307,7 @@
 				B94698631F7D49AB008985B9 /* LaunchScreen.storyboard in Resources */,
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
+				B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +470,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
+				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
+				B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */,
+				B946988E1F7D6150008985B9 /* Stories.swift in Sources */,
 				B94698591F7D49AB008985B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQEX6X2Z5Q;
 				INFOPLIST_FILE = IOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istarindia.IOSExample;
@@ -630,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQEX6X2Z5Q;
 				INFOPLIST_FILE = IOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istarindia.IOSExample;
