@@ -11,13 +11,13 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl"]
-    var someDict = ["TimerStoryboard":"timer"]
+    var someDict = ["TimerStoryboard":"timer","JsonStoryboard":"json"]
     var story = Stories(storyboardName: "TimerStoryboard", storyboardNameIdentifier: "TimerStoryboard")
     var storyArr = [Stories]()
     override func viewDidLoad() {
         super.viewDidLoad()
         storyArr = [story]
-
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -54,8 +54,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        // print(someDict[indexPath.row])
         print(Array(someDict.keys)[indexPath.row])
-        let ss = storyArr[indexPath.row]
-        print(ss.storyboardName)
+       // let ss = storyArr[indexPath.row]
+        //print(ss.storyboardName)
     }
     
     @objc private func buttonClicked(sender:UIButton) {
