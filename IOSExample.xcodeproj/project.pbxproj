@@ -22,6 +22,11 @@
 		B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */; };
 		B946988E1F7D6150008985B9 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988D1F7D6150008985B9 /* Stories.swift */; };
 		B94698901F7D63AC008985B9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946988F1F7D63AC008985B9 /* Person.swift */; };
+		B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698911F7D646D008985B9 /* JsonStoryboard.storyboard */; };
+		B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698941F7D64A1008985B9 /* JsonViewController.swift */; };
+		B94698971F7D64DF008985B9 /* Feroz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698961F7D64DF008985B9 /* Feroz.swift */; };
+		B946989C1F7D656E008985B9 /* HttpCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946989B1F7D656E008985B9 /* HttpCall.swift */; };
+		B946989F1F7D75BA008985B9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946989E1F7D75BA008985B9 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabelCellTableViewCell.swift; sourceTree = "<group>"; };
 		B946988D1F7D6150008985B9 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		B946988F1F7D63AC008985B9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B94698911F7D646D008985B9 /* JsonStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JsonStoryboard.storyboard; sourceTree = "<group>"; };
+		B94698941F7D64A1008985B9 /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
+		B94698961F7D64DF008985B9 /* Feroz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feroz.swift; sourceTree = "<group>"; };
+		B946989B1F7D656E008985B9 /* HttpCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCall.swift; sourceTree = "<group>"; };
+		B946989E1F7D75BA008985B9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +157,9 @@
 		B94698571F7D49AB008985B9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				B946989D1F7D6E9E008985B9 /* complexobject */,
+				B94698981F7D650F008985B9 /* util */,
+				B94698931F7D6481008985B9 /* json */,
 				B94698581F7D49AB008985B9 /* AppDelegate.swift */,
 				B946985A1F7D49AB008985B9 /* ViewController.swift */,
 				B946988F1F7D63AC008985B9 /* Person.swift */,
@@ -182,10 +195,38 @@
 		B946988A1F7D50DD008985B9 /* timer */ = {
 			isa = PBXGroup;
 			children = (
-				B94698861F7D50B9008985B9 /* TimerStoryboard.storyboard */,
 				B94698881F7D50D8008985B9 /* TimerControllerViewController.swift */,
+				B94698861F7D50B9008985B9 /* TimerStoryboard.storyboard */,
 			);
 			path = timer;
+			sourceTree = "<group>";
+		};
+		B94698931F7D6481008985B9 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				B94698911F7D646D008985B9 /* JsonStoryboard.storyboard */,
+				B94698941F7D64A1008985B9 /* JsonViewController.swift */,
+				B94698961F7D64DF008985B9 /* Feroz.swift */,
+				B946989E1F7D75BA008985B9 /* Task.swift */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		B94698981F7D650F008985B9 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B946989B1F7D656E008985B9 /* HttpCall.swift */,
+			);
+			name = util;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B946989D1F7D6E9E008985B9 /* complexobject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = complexobject;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +347,7 @@
 			files = (
 				B94698631F7D49AB008985B9 /* LaunchScreen.storyboard in Resources */,
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
+				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
 				B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */,
 			);
@@ -472,7 +514,11 @@
 			files = (
 				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
+				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
+				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
+				B94698971F7D64DF008985B9 /* Feroz.swift in Sources */,
+				B946989C1F7D656E008985B9 /* HttpCall.swift in Sources */,
 				B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */,
 				B946988E1F7D6150008985B9 /* Stories.swift in Sources */,
 				B94698591F7D49AB008985B9 /* AppDelegate.swift in Sources */,
