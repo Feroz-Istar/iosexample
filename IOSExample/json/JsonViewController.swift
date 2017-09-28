@@ -16,17 +16,16 @@ class JsonViewController: UIViewController {
         print(cc.getResponse())
         let data = cc.getResponse().data(using: String.Encoding.utf8, allowLossyConversion: false)!
         do {
-            var json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
+            let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
             var jsonData: Data?
-            if  json != nil {
-                jsonData = try? JSONSerialization.data(withJSONObject: json)
-            }
+            jsonData = try? JSONSerialization.data(withJSONObject: json)
+
             var decodedPerson: Feroz?
             if let data = jsonData {
                 decodedPerson = try? JSONDecoder().decode(Feroz.self, from: data)
             }
-            print(decodedPerson?.name)
-            print(decodedPerson?.tasks?.count)
+            print(decodedPerson?.name ?? "")
+            print(decodedPerson?.tasks?.count ?? -1)
         } catch let error as NSError {
             print("Failed to load: \(error.localizedDescription)")
         }

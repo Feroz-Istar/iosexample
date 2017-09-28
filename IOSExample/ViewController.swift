@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl"]
-    var someDict = ["TimerStoryboard":"timer","JsonStoryboard":"json"]
+    var someDict = ["TimerStoryboard":"timer","JsonStoryboard":"json","CollectionStoryboard": "collection"]
     var story = Stories(storyboardName: "TimerStoryboard", storyboardNameIdentifier: "TimerStoryboard")
     var storyArr = [Stories]()
     override func viewDidLoad() {
