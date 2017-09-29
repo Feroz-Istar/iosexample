@@ -10,8 +10,10 @@ import UIKit
 
 class MyTabelCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var mylabel: UILabel!
     @IBOutlet weak var mybutton: UIButton!
+    @IBOutlet weak var closebutton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

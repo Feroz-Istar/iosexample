@@ -41,11 +41,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let keyvalue = Array(someDict)[indexPath.row].value
 
             cell.mylabel?.text = keys
+            cell.mylabel.font = UIFont(name: "Avenir-Black", size: 16)
             cell.mybutton.setTitle(keyvalue, for: .normal)
-          
-            cell.mybutton.tag = indexPath.row;
+            cell.mybutton.titleLabel!.font =  UIFont(name: "Avenir-Black", size: 20)
 
+            cell.mybutton.tag = indexPath.row;
+            cell.checkButton.tag = indexPath.row
             cell.mybutton.addTarget(self, action: #selector(self.buttonClicked), for: .touchUpInside)
+            cell.checkButton.addTarget(self, action: #selector(self.checkClicked), for: .touchUpInside)
 
             
             return cell
@@ -56,6 +59,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print(Array(someDict.keys)[indexPath.row])
        // let ss = storyArr[indexPath.row]
         //print(ss.storyboardName)
+    }
+    
+    
+    
+    @objc func checkClicked(sender:UIButton){
+        //check for button background image
+        if let myButtonImage = sender.image(for: .normal),
+            let buttonAppuyerImage = UIImage(named: "ic_check_circle.png"),
+            UIImagePNGRepresentation(myButtonImage) == UIImagePNGRepresentation(buttonAppuyerImage)
+        {
+            print("YES")
+            //set button background image
+            let image = UIImage(named: "ic_highlight_off") as UIImage?
+
+            sender.setImage(image, for: .normal)
+
+
+        } else {
+            print("NO")
+            let image = UIImage(named: "ic_check_circle") as UIImage?
+            
+            sender.setImage(image, for: .normal)
+        }
+
+         print("checked button is clikced \(sender.tag) ")
+        
+        
     }
     
     @objc private func buttonClicked(sender:UIButton) {
