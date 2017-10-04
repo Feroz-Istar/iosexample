@@ -30,6 +30,9 @@
 		B94698A51F7D95AB008985B9 /* CollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698A41F7D95AB008985B9 /* CollectionStoryboard.storyboard */; };
 		B94698A81F7D95CC008985B9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698A71F7D95CC008985B9 /* CollectionViewController.swift */; };
 		B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698A91F7DA012008985B9 /* CollectionViewCell.swift */; };
+		B94698AC1F7E73D3008985B9 /* FirebaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */; };
+		B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */; };
+		B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98B61BF1F857CF30058353C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		B94698A41F7D95AB008985B9 /* CollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionStoryboard.storyboard; sourceTree = "<group>"; };
 		B94698A71F7D95CC008985B9 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B94698A91F7DA012008985B9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseStoryboard.storyboard; sourceTree = "<group>"; };
+		B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
+		B98B61BF1F857CF30058353C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,12 +175,14 @@
 				B94698931F7D6481008985B9 /* json */,
 				B94698581F7D49AB008985B9 /* AppDelegate.swift */,
 				B946985A1F7D49AB008985B9 /* ViewController.swift */,
+				B94698AD1F7E73D9008985B9 /* firebase */,
 				B946988F1F7D63AC008985B9 /* Person.swift */,
 				B946988D1F7D6150008985B9 /* Stories.swift */,
 				B946985C1F7D49AB008985B9 /* Main.storyboard */,
 				B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */,
 				B946985F1F7D49AB008985B9 /* Assets.xcassets */,
 				B94698611F7D49AB008985B9 /* LaunchScreen.storyboard */,
+				B98B61BF1F857CF30058353C /* GoogleService-Info.plist */,
 				B94698641F7D49AB008985B9 /* Info.plist */,
 				B946988A1F7D50DD008985B9 /* timer */,
 			);
@@ -244,6 +252,15 @@
 				B94698A91F7DA012008985B9 /* CollectionViewCell.swift */,
 			);
 			path = collections;
+			sourceTree = "<group>";
+		};
+		B94698AD1F7E73D9008985B9 /* firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */,
+				B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */,
+			);
+			path = firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B94698631F7D49AB008985B9 /* LaunchScreen.storyboard in Resources */,
+				B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */,
+				B94698AC1F7E73D3008985B9 /* FirebaseStoryboard.storyboard in Resources */,
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
 				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
@@ -533,6 +552,7 @@
 				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
+				B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */,
 				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
 				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,

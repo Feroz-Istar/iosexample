@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl"]
-    var someDict = ["TimerStoryboard":"timer","JsonStoryboard":"json","CollectionStoryboard": "collection"]
+    var someDict = ["Timer":"timer","Json":"json","Collection": "collection","Firebase": "firebase"]
     var story = Stories(storyboardName: "TimerStoryboard", storyboardNameIdentifier: "TimerStoryboard")
     var storyArr = [Stories]()
     override func viewDidLoad() {
@@ -100,7 +100,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func changStoryBoard(name : String, identifier : String)-> Void {
-        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let storyBoardName = "\(name)Storyboard"
+        let storyboard = UIStoryboard(name: storyBoardName, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: identifier) as UIViewController
         present(vc, animated: true, completion: nil)
     }
