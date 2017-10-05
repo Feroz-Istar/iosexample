@@ -33,6 +33,9 @@
 		B94698AC1F7E73D3008985B9 /* FirebaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */; };
 		B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */; };
 		B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98B61BF1F857CF30058353C /* GoogleService-Info.plist */; };
+		B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */; };
+		B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */; };
+		B98B61CA1F858AC10058353C /* UICollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61C91F858AC10058353C /* UICollectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseStoryboard.storyboard; sourceTree = "<group>"; };
 		B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		B98B61BF1F857CF30058353C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollectionStoryboard.storyboard; sourceTree = "<group>"; };
+		B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B98B61C91F858AC10058353C /* UICollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionsViewController.swift; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +191,7 @@
 				B98B61BF1F857CF30058353C /* GoogleService-Info.plist */,
 				B94698641F7D49AB008985B9 /* Info.plist */,
 				B946988A1F7D50DD008985B9 /* timer */,
+				B98B61C41F8588940058353C /* uicollectionview */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -261,6 +268,16 @@
 				B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */,
 			);
 			path = firebase;
+			sourceTree = "<group>";
+		};
+		B98B61C41F8588940058353C /* uicollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */,
+				B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */,
+				B98B61C91F858AC10058353C /* UICollectionsViewController.swift */,
+			);
+			path = uicollectionview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +402,7 @@
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
 				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
+				B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */,
 				B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */,
 				B94698A51F7D95AB008985B9 /* CollectionStoryboard.storyboard in Resources */,
 			);
@@ -552,8 +570,10 @@
 				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
+				B98B61CA1F858AC10058353C /* UICollectionsViewController.swift in Sources */,
 				B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */,
 				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
+				B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */,
 				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
 				B94698971F7D64DF008985B9 /* Feroz.swift in Sources */,
