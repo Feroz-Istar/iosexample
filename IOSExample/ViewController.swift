@@ -12,17 +12,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl"]
     var someDict = ["Timer":"timer","Json":"json","Collection": "collection","Firebase": "firebase"
-    
-        ,"UICollection": "collection"]
+        
+        ,"UICollection": "collection","Navigation": "navigations","Page": "pages","Media": "media"]
     var story = Stories(storyboardName: "TimerStoryboard", storyboardNameIdentifier: "TimerStoryboard")
     var storyArr = [Stories]()
     override func viewDidLoad() {
         super.viewDidLoad()
         storyArr = [story]
-        
+        self.navigationController?.isNavigationBarHidden = true
+
         // Do any additional setup after loading the view, typically from a nib.
     }
+    override func viewDidAppear(_ animated: Bool) {
 
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

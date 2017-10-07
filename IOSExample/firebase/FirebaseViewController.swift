@@ -19,7 +19,7 @@ class FirebaseViewController: UIViewController {
         
         
         
-        ref.child("istar-notification-ios").child("Feroz").setValue(someDictionary)
+        //ref.child("istar-notification-ios").child("Feroz").setValue(someDictionary)
         ref.child("istar-notification-ios").child("Feroz").observe(DataEventType.value, with: { (snapshot) in
             let postDict = snapshot.value as? [String : AnyObject] ?? [:]
             for (key, value) in postDict {
