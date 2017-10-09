@@ -7,37 +7,40 @@
 //
 
 import UIKit
+import AVKit
+
 import AVFoundation
 
 class MediaViewController: UIViewController {
  
     
     var bombSoundEffect: AVAudioPlayer?
-
-    
-    
+    var currentTime:Double?
+    var videoPlayer:AVPlayer?
+    @IBOutlet weak var myimage: UIImageView!
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "http://radio.spainmedia.es/wp-content/uploads/2015/12/tailtoddle_lo4.mp3")
+        let url = URL(string: "http://techslides.com/demos/sample-videos/small.mp4")
         SaveMedia().saveMedia(url: url!, directory: "chameli/sex")
-//        let path = Bundle.main.path(forResource: "ddd.mp3", ofType:nil)!
-//        let url = URL(fileURLWithPath: path)
-//        //let urlstring = "http://radio.spainmedia.es/wp-content/uploads/2015/12/tailtoddle_lo4.mp3"
-//        //let url = URL(string: urlstring)
-//
+        
+        
+        
+        
+        
+        // fetch image from local
+        FileChecker().loadImage(filename: "chumpy.png", directory: "chameli/sex", myimage: myimage)
+//        let imagepath = FileChecker().getPath(filename: "chumpy.png", directory: "chameli/sex")
+//        let u = URL(fileURLWithPath: imagepath)
 //        do {
 //
-//            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
-//            bombSoundEffect?.prepareToPlay()
-//           bombSoundEffect?.play()
-//
-//
-//        } catch let error as NSError {
-//            // couldn't load file :(
-//            print(error.localizedDescription)
+//            myimage.image = UIImage(contentsOfFile: imagepath)
+//        } catch {
+//            print("Error loading image : \(error)")
 //        }
+        
+
         print(FileChecker().checkFile(name: "viksit/feroz/feroz1.mp3" ))
         print(listFilesFromDocumentsFolder())
 
@@ -75,4 +78,38 @@ class MediaViewController: UIViewController {
         }
     }
 
+    @IBAction func playClicked(_ sender: UIButton) {
+        //play audio from local
+        let path = FileChecker().getPath(filename: "tailtoddle_lo4.mp3", directory: "chameli/sex")
+        let urls = URL(fileURLWithPath: path)
+        do{
+            bombSoundEffect = try AVAudioPlayer(contentsOf: urls)
+            bombSoundEffect?.play()
+        }catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    @IBAction func pauseClicked(_ sender: UIButton) {
+        bombSoundEffect?.pause()
+        currentTime = bombSoundEffect?.currentTime
+    }
+    @IBAction func resumeClicked(_ sender: UIButton) {
+        bombSoundEffect?.currentTime = currentTime!
+        bombSoundEffect?.play()
+
+    }
+    
+    @IBAction func changeImage(_ sender: UIButton) {
+//        let myurl = URL(string: "http://techslides.com/demos/sample-videos/small.mp4")
+//        let player = AVPlayer(url: myurl! as URL)
+//        let playerViewController = AVPlayerViewController()
+//        playerViewController.player = player
+        
+        let playerViewController = PlayMediaUrl().playVideo(url: "http://techslides.com/demos/sample-videos/small.mp4")
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+        //FileChecker().loadImage(filename: "john.jpg", directory: "chameli/sex", myimage: myimage)
+        
+    }
 }

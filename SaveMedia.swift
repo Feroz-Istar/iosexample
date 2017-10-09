@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SSZipArchive
+
 class SaveMedia {
     
     func saveMedia(url:URL) -> Void{
@@ -41,6 +43,18 @@ class SaveMedia {
         }
         
         
+        if FileManager.default.fileExists(atPath: destinationUrl.path) {
+            print("The file already exists at path")
+            do{
+            try FileManager.default.removeItem(at: destinationUrl)
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+                // if the file doesn't exist
+        } else {
+            
+        }
+        
         
         URLSession.shared.downloadTask(with: url, completionHandler: { (location, response, error) -> Void in
             guard let location = location, error == nil else { return }
@@ -54,5 +68,47 @@ class SaveMedia {
         }).resume()
     }
     
+    
+    func saveZipFile(url: URL, directory: String) -> Void {
+        let request = URLRequest(url: url)
+        
+        
+        
+        let task = URLSession.shared.downloadTask(with: request) { (tempLocalUrl, response, error) in
+            if let tempLocalUrl = tempLocalUrl, error == nil {
+                // Success
+                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                    print("Successfully downloaded. Status code: \(statusCode)")
+                }
+
+                do {
+                   try FileManager.default.copyItem(at: tempLocalUrl as URL, to: FileChecker().getPathURL(filename: url.lastPathComponent, directory: directory))
+
+                    print("sucessfully downloaded the zip file ...........")
+                    //unziping it
+                    //self.unzipFile(url: url, directory: directory)
+
+                } catch (let writeError) {
+                        print("Error creating a file  : \(writeError)")
+                }
+
+
+            } else {
+                print("Error took place while downloading a file. Error description: %@", error?.localizedDescription);
+            }
+        }
+        task.resume()
+    }
+    
+    
+    
+    
+    func unzipFile(url:URL,directory: String) -> Void {
+        let path = FileChecker().getPath(filename: url.lastPathComponent, directory: directory)
+        
+        let lpath = FileChecker().getPath(filename: "", directory: directory)
+        SSZipArchive.unzipFile(atPath: path, toDestination: lpath)
+
+    }
     
 }

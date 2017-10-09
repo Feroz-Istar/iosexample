@@ -15,6 +15,13 @@
 		B91670A51F88448900F18467 /* SaveAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A41F88448900F18467 /* SaveAudio.swift */; };
 		B91670A71F88543900F18467 /* FileChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A61F88543900F18467 /* FileChecker.swift */; };
 		B91670A91F88593800F18467 /* SaveMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A81F88593800F18467 /* SaveMedia.swift */; };
+		B91670AB1F8884BB00F18467 /* PlayMediaUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670AA1F8884BB00F18467 /* PlayMediaUrl.swift */; };
+		B91670AD1F88878A00F18467 /* UnzipStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91670AC1F88878A00F18467 /* UnzipStoryboard.storyboard */; };
+		B91670B01F8887A700F18467 /* UnzipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670AF1F8887A700F18467 /* UnzipViewController.swift */; };
+		B93D91D51F8B564F001A0B8E /* SocialMediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93D91D41F8B564F001A0B8E /* SocialMediaStoryboard.storyboard */; };
+		B93D91D81F8B5668001A0B8E /* SocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D91D71F8B5668001A0B8E /* SocialMediaViewController.swift */; };
+		B93D91EE1F8B7C16001A0B8E /* FacebookStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93D91ED1F8B7C16001A0B8E /* FacebookStoryboard.storyboard */; };
+		B93D91F01F8B7C2F001A0B8E /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D91EF1F8B7C2F001A0B8E /* FacebookViewController.swift */; };
 		B94698591F7D49AB008985B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698581F7D49AB008985B9 /* AppDelegate.swift */; };
 		B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946985A1F7D49AB008985B9 /* ViewController.swift */; };
 		B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B946985C1F7D49AB008985B9 /* Main.storyboard */; };
@@ -79,6 +86,14 @@
 		B91670A41F88448900F18467 /* SaveAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAudio.swift; sourceTree = "<group>"; };
 		B91670A61F88543900F18467 /* FileChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileChecker.swift; sourceTree = "<group>"; };
 		B91670A81F88593800F18467 /* SaveMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMedia.swift; sourceTree = "<group>"; };
+		B91670AA1F8884BB00F18467 /* PlayMediaUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMediaUrl.swift; sourceTree = "<group>"; };
+		B91670AC1F88878A00F18467 /* UnzipStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UnzipStoryboard.storyboard; sourceTree = "<group>"; };
+		B91670AF1F8887A700F18467 /* UnzipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnzipViewController.swift; sourceTree = "<group>"; };
+		B93D91D41F8B564F001A0B8E /* SocialMediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SocialMediaStoryboard.storyboard; sourceTree = "<group>"; };
+		B93D91D71F8B5668001A0B8E /* SocialMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaViewController.swift; sourceTree = "<group>"; };
+		B93D91E91F8B78E2001A0B8E /* IOSExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		B93D91ED1F8B7C16001A0B8E /* FacebookStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FacebookStoryboard.storyboard; sourceTree = "<group>"; };
+		B93D91EF1F8B7C2F001A0B8E /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		B94698551F7D49AB008985B9 /* IOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94698581F7D49AB008985B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B946985A1F7D49AB008985B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +187,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B91670AE1F88879100F18467 /* unzip */ = {
+			isa = PBXGroup;
+			children = (
+				B91670AC1F88878A00F18467 /* UnzipStoryboard.storyboard */,
+				B91670AF1F8887A700F18467 /* UnzipViewController.swift */,
+			);
+			path = unzip;
+			sourceTree = "<group>";
+		};
+		B93D91D61F8B5655001A0B8E /* socialmedia */ = {
+			isa = PBXGroup;
+			children = (
+				B93D91D41F8B564F001A0B8E /* SocialMediaStoryboard.storyboard */,
+				B93D91D71F8B5668001A0B8E /* SocialMediaViewController.swift */,
+				B93D91ED1F8B7C16001A0B8E /* FacebookStoryboard.storyboard */,
+				B93D91EF1F8B7C2F001A0B8E /* FacebookViewController.swift */,
+			);
+			path = socialmedia;
+			sourceTree = "<group>";
+		};
 		B946984C1F7D49AB008985B9 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +253,9 @@
 				B98B61BF1F857CF30058353C /* GoogleService-Info.plist */,
 				B94698641F7D49AB008985B9 /* Info.plist */,
 				B98B61DB1F8687100058353C /* media */,
+				B91670AE1F88879100F18467 /* unzip */,
+				B93D91D61F8B5655001A0B8E /* socialmedia */,
+				B93D91E91F8B78E2001A0B8E /* IOSExample-Bridging-Header.h */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -268,6 +306,7 @@
 				B91670A41F88448900F18467 /* SaveAudio.swift */,
 				B91670A61F88543900F18467 /* FileChecker.swift */,
 				B91670A81F88593800F18467 /* SaveMedia.swift */,
+				B91670AA1F8884BB00F18467 /* PlayMediaUrl.swift */,
 			);
 			name = util;
 			path = ..;
@@ -414,6 +453,7 @@
 				TargetAttributes = {
 					B94698541F7D49AB008985B9 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					B94698681F7D49AC008985B9 = {
@@ -459,14 +499,17 @@
 				B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */,
 				B94698AC1F7E73D3008985B9 /* FirebaseStoryboard.storyboard in Resources */,
 				B98B61CE1F864E7E0058353C /* NavigationStoryboard.storyboard in Resources */,
+				B93D91D51F8B564F001A0B8E /* SocialMediaStoryboard.storyboard in Resources */,
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
 				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B98B61DF1F8687500058353C /* MediaStoryboard.storyboard in Resources */,
 				B98B61D31F866B390058353C /* PageStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
+				B93D91EE1F8B7C16001A0B8E /* FacebookStoryboard.storyboard in Resources */,
 				B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */,
 				B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */,
 				B94698A51F7D95AB008985B9 /* CollectionStoryboard.storyboard in Resources */,
+				B91670AD1F88878A00F18467 /* UnzipStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,17 +676,21 @@
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
 				B98B61CA1F858AC10058353C /* UICollectionsViewController.swift in Sources */,
+				B93D91D81F8B5668001A0B8E /* SocialMediaViewController.swift in Sources */,
 				B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */,
 				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
 				B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */,
 				B98B61DD1F8687310058353C /* MediaViewController.swift in Sources */,
 				B91670A91F88593800F18467 /* SaveMedia.swift in Sources */,
 				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
+				B91670AB1F8884BB00F18467 /* PlayMediaUrl.swift in Sources */,
 				B91670A71F88543900F18467 /* FileChecker.swift in Sources */,
 				B98B61D81F866C270058353C /* PageViewController.swift in Sources */,
 				B91670A51F88448900F18467 /* SaveAudio.swift in Sources */,
 				B98B61D11F864EAB0058353C /* NavigationViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
+				B93D91F01F8B7C2F001A0B8E /* FacebookViewController.swift in Sources */,
+				B91670B01F8887A700F18467 /* UnzipViewController.swift in Sources */,
 				B94698971F7D64DF008985B9 /* Feroz.swift in Sources */,
 				B946989C1F7D656E008985B9 /* HttpCall.swift in Sources */,
 				B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */,
@@ -816,12 +863,20 @@
 			baseConfigurationReference = 10220C4DF1CA15E82152F790 /* Pods-IOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQEX6X2Z5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOSExample/framework",
+				);
 				INFOPLIST_FILE = IOSExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istarindia.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSExample/IOSExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -832,12 +887,19 @@
 			baseConfigurationReference = D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQEX6X2Z5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOSExample/framework",
+				);
 				INFOPLIST_FILE = IOSExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istarindia.IOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSExample/IOSExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
