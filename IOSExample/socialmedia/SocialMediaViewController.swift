@@ -108,6 +108,9 @@ class SocialMediaViewController: UIViewController,GIDSignInDelegate,GIDSignInUID
         }
     }
     
-  
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
 
 }

@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl"]
     var someDict = ["Timer":"timer","Json":"json","Collection": "collection","Firebase": "firebase"
         
-        ,"UICollection": "collection","Navigation": "navigations","Page": "pages","Media": "media","Unzip": "unzip", "SocialMedia": "socialmedia", "Facebook": "facebook"]
+        ,"UICollection": "collection","Navigation": "navigations","Page": "pages","Media": "media","Unzip": "unzip", "SocialMedia": "socialmedia", "Facebook": "facebook","LinkedIn" : "linkedin"]
     var story = Stories(storyboardName: "TimerStoryboard", storyboardNameIdentifier: "TimerStoryboard")
     var storyArr = [Stories]()
     override func viewDidLoad() {

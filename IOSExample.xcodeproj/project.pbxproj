@@ -54,6 +54,8 @@
 		B98B61D81F866C270058353C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61D71F866C270058353C /* PageViewController.swift */; };
 		B98B61DD1F8687310058353C /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61DC1F8687310058353C /* MediaViewController.swift */; };
 		B98B61DF1F8687500058353C /* MediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61DE1F8687500058353C /* MediaStoryboard.storyboard */; };
+		B98BCA8F1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98BCA8E1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard */; };
+		B98BCA911F8BD1AA00B1EDD7 /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98BCA901F8BD1AA00B1EDD7 /* LinkedInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		B98B61D71F866C270058353C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B98B61DC1F8687310058353C /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		B98B61DE1F8687500058353C /* MediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaStoryboard.storyboard; sourceTree = "<group>"; };
+		B98BCA8E1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkedInStoryboard.storyboard; sourceTree = "<group>"; };
+		B98BCA901F8BD1AA00B1EDD7 /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +207,8 @@
 				B93D91D71F8B5668001A0B8E /* SocialMediaViewController.swift */,
 				B93D91ED1F8B7C16001A0B8E /* FacebookStoryboard.storyboard */,
 				B93D91EF1F8B7C2F001A0B8E /* FacebookViewController.swift */,
+				B98BCA8E1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard */,
+				B98BCA901F8BD1AA00B1EDD7 /* LinkedInViewController.swift */,
 			);
 			path = socialmedia;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				B98B61D31F866B390058353C /* PageStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
 				B93D91EE1F8B7C16001A0B8E /* FacebookStoryboard.storyboard in Resources */,
+				B98BCA8F1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard in Resources */,
 				B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */,
 				B94698871F7D50B9008985B9 /* TimerStoryboard.storyboard in Resources */,
 				B94698A51F7D95AB008985B9 /* CollectionStoryboard.storyboard in Resources */,
@@ -686,6 +693,7 @@
 				B91670AB1F8884BB00F18467 /* PlayMediaUrl.swift in Sources */,
 				B91670A71F88543900F18467 /* FileChecker.swift in Sources */,
 				B98B61D81F866C270058353C /* PageViewController.swift in Sources */,
+				B98BCA911F8BD1AA00B1EDD7 /* LinkedInViewController.swift in Sources */,
 				B91670A51F88448900F18467 /* SaveAudio.swift in Sources */,
 				B98B61D11F864EAB0058353C /* NavigationViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
