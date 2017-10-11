@@ -24,6 +24,12 @@ class UnzipViewController: UIViewController {
         FileChecker().getPath(filename: URL(string: "http://cdn.talentify.in:9999//lessonXMLs/10105.zip")!.lastPathComponent, directory: "chameli/sex")
         //let request = URLRequest(url: URL(string: "http://192.168.1.9:8080/TestRest/TestRest")!)
         SaveMedia().saveZipFile(url: URL(string: "http://cdn.talentify.in:9999//lessonXMLs/10105.zip")!, directory: "chameli/sex");
+        SaveMedia().unzipFile(url: URL(string: "http://cdn.talentify.in:9999//lessonXMLs/10105.zip")!, directory: "chameli/sex")
+        
+        
+        
+        
+        
 //        let task = URLSession.shared.dataTask(with: request, completionHandler: { tempLocalUrl, response, error in
 //            if let error = error {
 //                print("Error while trying to re-authenticate the user: \(error)")

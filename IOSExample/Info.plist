@@ -21,7 +21,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1956321084598222</string>
+				<string>li4951705</string>
 			</array>
 		</dict>
 		<dict>
@@ -39,12 +39,13 @@
 	<string>1956321084598222</string>
 	<key>FacebookDisplayName</key>
 	<string>Talentify</string>
+	<key>LIAppId</key>
+	<string>4951705</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
+		<string>linkedin</string>
+		<string>linkedin-sdk2</string>
+		<string>linkedin-sdk</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -74,23 +75,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>LIAppId</key>
-    <string>4951705</string>
-        
-        <key>CFBundleURLTypes</key>
-        <array>
-            <dict>
-                <key>CFBundleURLSchemes</key>
-                <array>
-                    <string>li4951705</string>
-                    </array>
-                </dict>
-            </array>
-            <key>LSApplicationQueriesSchemes</key>
-            <array>
-                <string>linkedin</string>
-                <string>linkedin-sdk2</string>
-                <string>linkedin-sdk</string>
-            </array>
 </dict>
 </plist>

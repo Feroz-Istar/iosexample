@@ -44,6 +44,8 @@
 		B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698A91F7DA012008985B9 /* CollectionViewCell.swift */; };
 		B94698AC1F7E73D3008985B9 /* FirebaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */; };
 		B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */; };
+		B94F485B1F8D15370031ED27 /* ThreadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F485A1F8D15370031ED27 /* ThreadStoryboard.storyboard */; };
+		B94F485D1F8D2A180031ED27 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F485C1F8D2A180031ED27 /* CircleImageView.swift */; };
 		B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98B61BF1F857CF30058353C /* GoogleService-Info.plist */; };
 		B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */; };
 		B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */; };
@@ -56,6 +58,8 @@
 		B98B61DF1F8687500058353C /* MediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61DE1F8687500058353C /* MediaStoryboard.storyboard */; };
 		B98BCA8F1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98BCA8E1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard */; };
 		B98BCA911F8BD1AA00B1EDD7 /* LinkedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98BCA901F8BD1AA00B1EDD7 /* LinkedInViewController.swift */; };
+		B98BCA961F8CAD5500B1EDD7 /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98BCA951F8CAD5500B1EDD7 /* ThreadViewController.swift */; };
+		B98BCAFF1F8CF3D000B1EDD7 /* StudentProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98BCAFE1F8CF3D000B1EDD7 /* StudentProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +128,8 @@
 		B94698A91F7DA012008985B9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B94698AB1F7E73D3008985B9 /* FirebaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseStoryboard.storyboard; sourceTree = "<group>"; };
 		B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
+		B94F485A1F8D15370031ED27 /* ThreadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThreadStoryboard.storyboard; sourceTree = "<group>"; };
+		B94F485C1F8D2A180031ED27 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		B98B61BF1F857CF30058353C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollectionStoryboard.storyboard; sourceTree = "<group>"; };
 		B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		B98B61DE1F8687500058353C /* MediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaStoryboard.storyboard; sourceTree = "<group>"; };
 		B98BCA8E1F8BD19B00B1EDD7 /* LinkedInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkedInStoryboard.storyboard; sourceTree = "<group>"; };
 		B98BCA901F8BD1AA00B1EDD7 /* LinkedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInViewController.swift; sourceTree = "<group>"; };
+		B98BCA951F8CAD5500B1EDD7 /* ThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
+		B98BCAFE1F8CF3D000B1EDD7 /* StudentProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfile.swift; sourceTree = "<group>"; };
 		BDCADD0C6E36E2842916DD2A /* Pods_IOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42846E42DB478C2F85C7FF5 /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,8 +246,9 @@
 		B94698571F7D49AB008985B9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				B946988A1F7D50DD008985B9 /* timer */,
+				B98BCAFD1F8CF3B600B1EDD7 /* com */,
 				B94698A61F7D95B5008985B9 /* collections */,
-				B946989D1F7D6E9E008985B9 /* complexobject */,
 				B94698981F7D650F008985B9 /* util */,
 				B94698931F7D6481008985B9 /* json */,
 				B94698AD1F7E73D9008985B9 /* firebase */,
@@ -262,6 +271,7 @@
 				B91670AE1F88879100F18467 /* unzip */,
 				B93D91D61F8B5655001A0B8E /* socialmedia */,
 				B93D91E91F8B78E2001A0B8E /* IOSExample-Bridging-Header.h */,
+				B98BCA941F8CAD4400B1EDD7 /* thread */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -296,7 +306,6 @@
 		B94698931F7D6481008985B9 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				B946988A1F7D50DD008985B9 /* timer */,
 				B94698911F7D646D008985B9 /* JsonStoryboard.storyboard */,
 				B94698941F7D64A1008985B9 /* JsonViewController.swift */,
 				B94698961F7D64DF008985B9 /* Feroz.swift */,
@@ -313,16 +322,9 @@
 				B91670A61F88543900F18467 /* FileChecker.swift */,
 				B91670A81F88593800F18467 /* SaveMedia.swift */,
 				B91670AA1F8884BB00F18467 /* PlayMediaUrl.swift */,
+				B94F485C1F8D2A180031ED27 /* CircleImageView.swift */,
 			);
 			name = util;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		B946989D1F7D6E9E008985B9 /* complexobject */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = complexobject;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -380,6 +382,24 @@
 				B98B61DE1F8687500058353C /* MediaStoryboard.storyboard */,
 			);
 			path = media;
+			sourceTree = "<group>";
+		};
+		B98BCA941F8CAD4400B1EDD7 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				B98BCA951F8CAD5500B1EDD7 /* ThreadViewController.swift */,
+				B94F485A1F8D15370031ED27 /* ThreadStoryboard.storyboard */,
+			);
+			path = thread;
+			sourceTree = "<group>";
+		};
+		B98BCAFD1F8CF3B600B1EDD7 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				B98BCAFE1F8CF3D000B1EDD7 /* StudentProfile.swift */,
+			);
+			name = com;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +527,7 @@
 				B98B61CE1F864E7E0058353C /* NavigationStoryboard.storyboard in Resources */,
 				B93D91D51F8B564F001A0B8E /* SocialMediaStoryboard.storyboard in Resources */,
 				B94698601F7D49AB008985B9 /* Assets.xcassets in Resources */,
+				B94F485B1F8D15370031ED27 /* ThreadStoryboard.storyboard in Resources */,
 				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B98B61DF1F8687500058353C /* MediaStoryboard.storyboard in Resources */,
 				B98B61D31F866B390058353C /* PageStoryboard.storyboard in Resources */,
@@ -682,16 +703,19 @@
 				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
+				B98BCAFF1F8CF3D000B1EDD7 /* StudentProfile.swift in Sources */,
 				B98B61CA1F858AC10058353C /* UICollectionsViewController.swift in Sources */,
 				B93D91D81F8B5668001A0B8E /* SocialMediaViewController.swift in Sources */,
 				B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */,
 				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
 				B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */,
+				B98BCA961F8CAD5500B1EDD7 /* ThreadViewController.swift in Sources */,
 				B98B61DD1F8687310058353C /* MediaViewController.swift in Sources */,
 				B91670A91F88593800F18467 /* SaveMedia.swift in Sources */,
 				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
 				B91670AB1F8884BB00F18467 /* PlayMediaUrl.swift in Sources */,
 				B91670A71F88543900F18467 /* FileChecker.swift in Sources */,
+				B94F485D1F8D2A180031ED27 /* CircleImageView.swift in Sources */,
 				B98B61D81F866C270058353C /* PageViewController.swift in Sources */,
 				B98BCA911F8BD1AA00B1EDD7 /* LinkedInViewController.swift in Sources */,
 				B91670A51F88448900F18467 /* SaveAudio.swift in Sources */,
