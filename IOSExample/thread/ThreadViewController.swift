@@ -12,10 +12,30 @@ import AVFoundation
 class ThreadViewController: UIViewController {
     let defaults:UserDefaults = UserDefaults.standard
     var player: AVPlayer?
-    @IBOutlet weak var profileImage: CircleImageView!
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var mybutto: UIButton!
+    
+    
+    @IBOutlet weak var videoView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //play video
+        
+        
+        let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+        let player = AVPlayer(url: videoURL!)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        playerViewController.view.frame = videoView.frame
+        self.addChildViewController(playerViewController)
+        self.view.addSubview(playerViewController.view)
+
+        
+        
+        
+        
         
         play(url: URL(string: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")!)
         if let opened:Data = self.defaults.data(forKey: "studentProfile" ){
@@ -23,8 +43,12 @@ class ThreadViewController: UIViewController {
             var cc: StudentProfile?
             cc = try JSONDecoder().decode(StudentProfile.self, from: opened)
                 print("cc -----------> \(String(describing: cc?.firstName!))")
-                FileChecker().loadImageFromUrl(url: (cc?.profileImage!)!, myimage: profileImage)
-
+               // FileChecker().loadImageFromUrl(url: (cc?.profileImage!)!, myimage: profileImage)
+                let gifURL : String = "http://www.gifbin.com/bin/4802swswsw04.gif"
+                
+                let imageURL = UIImage.gifImageWithURL(gifUrl: gifURL)
+                profileImage.image = imageURL
+                
             }catch {
                 
             }

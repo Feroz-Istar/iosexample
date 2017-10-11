@@ -69,10 +69,12 @@ class SaveMedia {
     }
     
     
-    func saveZipFile(url: URL, directory: String) -> Void {
+    func saveZipFile(url: URL, directory: String) -> Bool {
         let request = URLRequest(url: url)
-        
-        
+        let semaphore = DispatchSemaphore(value: 0)
+
+        var success = false
+
         
         let task = URLSession.shared.downloadTask(with: request) { (tempLocalUrl, response, error) in
             if let tempLocalUrl = tempLocalUrl, error == nil {
@@ -83,10 +85,10 @@ class SaveMedia {
 
                 do {
                    try FileManager.default.copyItem(at: tempLocalUrl as URL, to: FileChecker().getPathURL(filename: url.lastPathComponent, directory: directory))
-
+                    success = true
                     print("sucessfully downloaded the zip file ...........")
-                    //unziping it
-                    //self.unzipFile(url: url, directory: directory)
+                    semaphore.signal()
+
 
                 } catch (let writeError) {
                         print("Error creating a file  : \(writeError)")
@@ -98,6 +100,8 @@ class SaveMedia {
             }
         }
         task.resume()
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        return success
     }
     
     

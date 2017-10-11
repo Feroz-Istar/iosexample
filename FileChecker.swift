@@ -6,8 +6,10 @@
 //  Copyright © 2017 Istar Feroz. All rights reserved.
 //
 import UIKit
-
+import AVKit
+import AVFoundation
 import Foundation
+
 class FileChecker {
     
     func checkFile(name:String) -> Bool{
@@ -42,4 +44,16 @@ class FileChecker {
             myimage.image = UIImage(contentsOfFile: imagepath)
     }
     
+    
+    func loadImageFromUrl(url: String, myimage: UIImageView){
+        let url = URL(string: url)
+        let data = try? Data(contentsOf: url!)
+        let image = UIImage(data: data!)
+           myimage.image = image
+
+        
+    }
+    
+    
+   
 }

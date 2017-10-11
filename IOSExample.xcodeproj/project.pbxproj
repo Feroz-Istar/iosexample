@@ -46,6 +46,10 @@
 		B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */; };
 		B94F485B1F8D15370031ED27 /* ThreadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F485A1F8D15370031ED27 /* ThreadStoryboard.storyboard */; };
 		B94F485D1F8D2A180031ED27 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F485C1F8D2A180031ED27 /* CircleImageView.swift */; };
+		B94F485F1F8E04B60031ED27 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F485E1F8E04B60031ED27 /* iOSDevCenters+GIF.swift */; };
+		B94F48611F8E14050031ED27 /* CarouselStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */; };
+		B94F48641F8E14380031ED27 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F48631F8E14380031ED27 /* CarouselViewController.swift */; };
+		B94F48661F8E269A0031ED27 /* CaurosalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */; };
 		B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98B61BF1F857CF30058353C /* GoogleService-Info.plist */; };
 		B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */; };
 		B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */; };
@@ -130,6 +134,10 @@
 		B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		B94F485A1F8D15370031ED27 /* ThreadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThreadStoryboard.storyboard; sourceTree = "<group>"; };
 		B94F485C1F8D2A180031ED27 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		B94F485E1F8E04B60031ED27 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarouselStoryboard.storyboard; sourceTree = "<group>"; };
+		B94F48631F8E14380031ED27 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaurosalCollectionViewCell.swift; sourceTree = "<group>"; };
 		B98B61BF1F857CF30058353C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollectionStoryboard.storyboard; sourceTree = "<group>"; };
 		B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 				B94698581F7D49AB008985B9 /* AppDelegate.swift */,
 				B912DFCB1F87C22100D7C7E8 /* songs.mp3 */,
 				B946988D1F7D6150008985B9 /* Stories.swift */,
+				B94F48621F8E14100031ED27 /* Carousel */,
 				B912DFCD1F87E40C00D7C7E8 /* ddd.mp3 */,
 				B946985C1F7D49AB008985B9 /* Main.storyboard */,
 				B946988B1F7D540A008985B9 /* MyTabelCellTableViewCell.swift */,
@@ -267,11 +276,11 @@
 				B94698611F7D49AB008985B9 /* LaunchScreen.storyboard */,
 				B98B61BF1F857CF30058353C /* GoogleService-Info.plist */,
 				B94698641F7D49AB008985B9 /* Info.plist */,
+				B98BCA941F8CAD4400B1EDD7 /* thread */,
 				B98B61DB1F8687100058353C /* media */,
 				B91670AE1F88879100F18467 /* unzip */,
 				B93D91D61F8B5655001A0B8E /* socialmedia */,
 				B93D91E91F8B78E2001A0B8E /* IOSExample-Bridging-Header.h */,
-				B98BCA941F8CAD4400B1EDD7 /* thread */,
 			);
 			path = IOSExample;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 				B91670A81F88593800F18467 /* SaveMedia.swift */,
 				B91670AA1F8884BB00F18467 /* PlayMediaUrl.swift */,
 				B94F485C1F8D2A180031ED27 /* CircleImageView.swift */,
+				B94F485E1F8E04B60031ED27 /* iOSDevCenters+GIF.swift */,
 			);
 			name = util;
 			path = ..;
@@ -345,6 +355,16 @@
 				B94698AE1F7E73F7008985B9 /* FirebaseViewController.swift */,
 			);
 			path = firebase;
+			sourceTree = "<group>";
+		};
+		B94F48621F8E14100031ED27 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */,
+				B94F48631F8E14380031ED27 /* CarouselViewController.swift */,
+				B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 		B98B61C41F8588940058353C /* uicollectionview */ = {
@@ -530,6 +550,7 @@
 				B94F485B1F8D15370031ED27 /* ThreadStoryboard.storyboard in Resources */,
 				B94698921F7D646D008985B9 /* JsonStoryboard.storyboard in Resources */,
 				B98B61DF1F8687500058353C /* MediaStoryboard.storyboard in Resources */,
+				B94F48611F8E14050031ED27 /* CarouselStoryboard.storyboard in Resources */,
 				B98B61D31F866B390058353C /* PageStoryboard.storyboard in Resources */,
 				B946985E1F7D49AB008985B9 /* Main.storyboard in Resources */,
 				B93D91EE1F8B7C16001A0B8E /* FacebookStoryboard.storyboard in Resources */,
@@ -701,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B94698901F7D63AC008985B9 /* Person.swift in Sources */,
+				B94F485F1F8E04B60031ED27 /* iOSDevCenters+GIF.swift in Sources */,
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
 				B98BCAFF1F8CF3D000B1EDD7 /* StudentProfile.swift in Sources */,
@@ -723,10 +745,12 @@
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
 				B93D91F01F8B7C2F001A0B8E /* FacebookViewController.swift in Sources */,
 				B91670B01F8887A700F18467 /* UnzipViewController.swift in Sources */,
+				B94F48661F8E269A0031ED27 /* CaurosalCollectionViewCell.swift in Sources */,
 				B94698971F7D64DF008985B9 /* Feroz.swift in Sources */,
 				B946989C1F7D656E008985B9 /* HttpCall.swift in Sources */,
 				B946988C1F7D540A008985B9 /* MyTabelCellTableViewCell.swift in Sources */,
 				B946988E1F7D6150008985B9 /* Stories.swift in Sources */,
+				B94F48641F8E14380031ED27 /* CarouselViewController.swift in Sources */,
 				B94698591F7D49AB008985B9 /* AppDelegate.swift in Sources */,
 				B94698A81F7D95CC008985B9 /* CollectionViewController.swift in Sources */,
 			);
