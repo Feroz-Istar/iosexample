@@ -12,6 +12,9 @@
 		643AB15AC8B3B6C915899242 /* Pods_IOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83AD1C0081D7CF850994830 /* Pods_IOSExample.framework */; };
 		B912DFCC1F87E2FC00D7C7E8 /* songs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B912DFCB1F87C22100D7C7E8 /* songs.mp3 */; };
 		B912DFCE1F87E46100D7C7E8 /* ddd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B912DFCD1F87E40C00D7C7E8 /* ddd.mp3 */; };
+		B9157AB61F8F5977008CEB59 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9157AB51F8F5977008CEB59 /* LabelCollectionViewCell.swift */; };
+		B9157ABA1F8F7354008CEB59 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9157AB91F8F7353008CEB59 /* iCarousel.m */; };
+		B9157AC11F8F825D008CEB59 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9157AC01F8F825D008CEB59 /* CardView.swift */; };
 		B91670A51F88448900F18467 /* SaveAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A41F88448900F18467 /* SaveAudio.swift */; };
 		B91670A71F88543900F18467 /* FileChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A61F88543900F18467 /* FileChecker.swift */; };
 		B91670A91F88593800F18467 /* SaveMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91670A81F88593800F18467 /* SaveMedia.swift */; };
@@ -50,6 +53,7 @@
 		B94F48611F8E14050031ED27 /* CarouselStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */; };
 		B94F48641F8E14380031ED27 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F48631F8E14380031ED27 /* CarouselViewController.swift */; };
 		B94F48661F8E269A0031ED27 /* CaurosalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */; };
+		B956A6431F8E66D600050F98 /* FeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B956A6421F8E66D600050F98 /* FeatureCollectionViewCell.swift */; };
 		B98B61C11F857DB90058353C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98B61BF1F857CF30058353C /* GoogleService-Info.plist */; };
 		B98B61C31F85888A0058353C /* UICollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */; };
 		B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */; };
@@ -93,6 +97,10 @@
 		A83AD1C0081D7CF850994830 /* Pods_IOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B912DFCB1F87C22100D7C7E8 /* songs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = songs.mp3; path = ../../../Downloads/songs.mp3; sourceTree = "<group>"; };
 		B912DFCD1F87E40C00D7C7E8 /* ddd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ddd.mp3; path = ../../../Downloads/ddd.mp3; sourceTree = "<group>"; };
+		B9157AB51F8F5977008CEB59 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		B9157AB81F8F7353008CEB59 /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		B9157AB91F8F7353008CEB59 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		B9157AC01F8F825D008CEB59 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B91670A41F88448900F18467 /* SaveAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAudio.swift; sourceTree = "<group>"; };
 		B91670A61F88543900F18467 /* FileChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileChecker.swift; sourceTree = "<group>"; };
 		B91670A81F88593800F18467 /* SaveMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMedia.swift; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 		B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarouselStoryboard.storyboard; sourceTree = "<group>"; };
 		B94F48631F8E14380031ED27 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaurosalCollectionViewCell.swift; sourceTree = "<group>"; };
+		B956A6421F8E66D600050F98 /* FeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		B98B61BF1F857CF30058353C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B98B61C21F85888A0058353C /* UICollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollectionStoryboard.storyboard; sourceTree = "<group>"; };
 		B98B61C71F8589160058353C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -207,6 +216,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B9157ABF1F8F824F008CEB59 /* viewutil */ = {
+			isa = PBXGroup;
+			children = (
+				B9157AC01F8F825D008CEB59 /* CardView.swift */,
+			);
+			path = viewutil;
+			sourceTree = "<group>";
+		};
 		B91670AE1F88879100F18467 /* unzip */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +271,7 @@
 		B94698571F7D49AB008985B9 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				B9157ABF1F8F824F008CEB59 /* viewutil */,
 				B946988A1F7D50DD008985B9 /* timer */,
 				B98BCAFD1F8CF3B600B1EDD7 /* com */,
 				B94698A61F7D95B5008985B9 /* collections */,
@@ -267,6 +285,8 @@
 				B946985A1F7D49AB008985B9 /* ViewController.swift */,
 				B94698581F7D49AB008985B9 /* AppDelegate.swift */,
 				B912DFCB1F87C22100D7C7E8 /* songs.mp3 */,
+				B9157AB81F8F7353008CEB59 /* iCarousel.h */,
+				B9157AB91F8F7353008CEB59 /* iCarousel.m */,
 				B946988D1F7D6150008985B9 /* Stories.swift */,
 				B94F48621F8E14100031ED27 /* Carousel */,
 				B912DFCD1F87E40C00D7C7E8 /* ddd.mp3 */,
@@ -363,6 +383,8 @@
 				B94F48601F8E14050031ED27 /* CarouselStoryboard.storyboard */,
 				B94F48631F8E14380031ED27 /* CarouselViewController.swift */,
 				B94F48651F8E269A0031ED27 /* CaurosalCollectionViewCell.swift */,
+				B956A6421F8E66D600050F98 /* FeatureCollectionViewCell.swift */,
+				B9157AB51F8F5977008CEB59 /* LabelCollectionViewCell.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -726,12 +748,14 @@
 				B946985B1F7D49AB008985B9 /* ViewController.swift in Sources */,
 				B94698AA1F7DA012008985B9 /* CollectionViewCell.swift in Sources */,
 				B98BCAFF1F8CF3D000B1EDD7 /* StudentProfile.swift in Sources */,
+				B9157AC11F8F825D008CEB59 /* CardView.swift in Sources */,
 				B98B61CA1F858AC10058353C /* UICollectionsViewController.swift in Sources */,
 				B93D91D81F8B5668001A0B8E /* SocialMediaViewController.swift in Sources */,
 				B94698AF1F7E73F7008985B9 /* FirebaseViewController.swift in Sources */,
 				B946989F1F7D75BA008985B9 /* Task.swift in Sources */,
 				B98B61C81F8589160058353C /* ImageCollectionViewCell.swift in Sources */,
 				B98BCA961F8CAD5500B1EDD7 /* ThreadViewController.swift in Sources */,
+				B9157AB61F8F5977008CEB59 /* LabelCollectionViewCell.swift in Sources */,
 				B98B61DD1F8687310058353C /* MediaViewController.swift in Sources */,
 				B91670A91F88593800F18467 /* SaveMedia.swift in Sources */,
 				B94698951F7D64A1008985B9 /* JsonViewController.swift in Sources */,
@@ -741,10 +765,12 @@
 				B98B61D81F866C270058353C /* PageViewController.swift in Sources */,
 				B98BCA911F8BD1AA00B1EDD7 /* LinkedInViewController.swift in Sources */,
 				B91670A51F88448900F18467 /* SaveAudio.swift in Sources */,
+				B956A6431F8E66D600050F98 /* FeatureCollectionViewCell.swift in Sources */,
 				B98B61D11F864EAB0058353C /* NavigationViewController.swift in Sources */,
 				B94698891F7D50D8008985B9 /* TimerControllerViewController.swift in Sources */,
 				B93D91F01F8B7C2F001A0B8E /* FacebookViewController.swift in Sources */,
 				B91670B01F8887A700F18467 /* UnzipViewController.swift in Sources */,
+				B9157ABA1F8F7354008CEB59 /* iCarousel.m in Sources */,
 				B94F48661F8E269A0031ED27 /* CaurosalCollectionViewCell.swift in Sources */,
 				B94698971F7D64DF008985B9 /* Feroz.swift in Sources */,
 				B946989C1F7D656E008985B9 /* HttpCall.swift in Sources */,

@@ -20,8 +20,8 @@ class CarouselViewController: UIViewController,UICollectionViewDelegate, UIColle
         let screensize = UIScreen.main.bounds.size
         let cellwidth = floor(screensize.width * cellscaling)
         let cellheight = floor(screensize.height * cellscaling)
-        let insetX = (view.bounds.width - cellwidth) / 2.0
-        let insetY = (view.bounds.height - cellwidth) / 2.0
+        let insetX = (view.bounds.width - cellwidth) / 2
+        let insetY = (view.bounds.height - cellwidth) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: cellwidth, height: cellheight)
         collectionView.contentInset = UIEdgeInsetsMake(insetY, insetX, insetY, insetX)
@@ -43,12 +43,38 @@ class CarouselViewController: UIViewController,UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cellIdentifier = "caurosalcell"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
-                                                      for: indexPath) as! CaurosalCollectionViewCell
-        cell.featureImage.image = UIImage(named: nos_images[indexPath.row])
-        cell.title.text = nos_images[indexPath.row]
-        return cell
+        var cellIdentifier = "caurosalcell"
+        if indexPath.row % 2 == 0 {
+            cellIdentifier = "caurosalcell1"
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+                                                          for: indexPath) as! FeatureCollectionViewCell
+            cell.myimage.image = UIImage(named: nos_images[indexPath.row])
+            cell.mylabel.setTitle(nos_images[indexPath.row], for: .normal)
+            return cell
+
+        } else if indexPath.row % 3 == 0{
+            cellIdentifier = "caurosalcell2"
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+                                                          for: indexPath) as! LabelCollectionViewCell
+            
+            
+            
+           // cell.label1.text = nos_images[indexPath.row]
+            return cell
+            
+        }
+        else {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+                                                          for: indexPath) as! CaurosalCollectionViewCell
+            cell.featureImage.image = UIImage(named: nos_images[indexPath.row])
+            cell.title.text = nos_images[indexPath.row]
+            cell.layer.zPosition = CGFloat(indexPath.row);
+            return cell
+
+        }
+        
+
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -63,6 +89,11 @@ class CarouselViewController: UIViewController,UICollectionViewDelegate, UIColle
         let roundIndex = round(index)
         offset = CGPoint(x: roundIndex * cellWidthIncludingSpacing - scrollView.contentInset.left, y: -scrollView.contentInset.top)
         targetContentOffset.pointee = offset
+       
+
+        
+        
+      
     }
     /*
     // MARK: - Navigation
